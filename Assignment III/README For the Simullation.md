@@ -1,6 +1,7 @@
 # Traveling Ethiopia - ROS 2 Robot Navigation Project
 
 A complete ROS 2 simulation implementing the Traveling Ethiopia search problem with autonomous robot navigation through Ethiopian cities using Breadth-First Search (BFS) algorithm.
+I have created a responsive simulation of a 3-wheeled navigation robot web app. You can take a look at "https://ethio-rover.vercel.app".
 
 ## Project Overview
 
