@@ -6,7 +6,7 @@ I have created a responsive simulation of a 3-wheeled navigation robot web app a
 ## Project Overview
 
 This project demonstrates an intelligent robot navigation system that:
-- Uses an uninformed search strategy (BFS) to find optimal paths between Ethiopian cities
+- Uses a BFS to find optimal paths between Ethiopian cities
 - Autonomously navigates a three-wheeled differential drive robot through waypoints
 - Simulates realistic Ethiopian terrain and landmarks in Gazebo
 - Implements sensor integration (Lidar, IMU, RGB Camera)
@@ -106,7 +106,7 @@ ros2 run traveling_ethiopia robot_driver
 
 ## Available Cities
 
-The simulation includes 45 Ethiopian cities organized by region:
+The simulation includes 42 Ethiopian cities organized by region:
 
 **Western Ethiopia (Red pins):**
 Gambela, Dembi Dollo, Gore, Gimbi, Tepi, Mezan Teferi
