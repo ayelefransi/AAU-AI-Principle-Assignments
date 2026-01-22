@@ -21,7 +21,7 @@ This project demonstrates an intelligent robot navigation system that:
 - **Autonomous navigation** using proportional control
 
 ### World Environment
-- **45 Ethiopian cities** represented as location pin markers
+- **42 Ethiopian cities** represented as location pin markers
 - **Color-coded regions** for easy identification
 - **Ethiopian landmarks** including Simien Mountains, Lake Tana, Bale Mountains, and Rift Valley Lakes
 - **Realistic terrain** with Ethiopian Highlands coloring
