@@ -1,4 +1,4 @@
-# Traveling Ethiopia Search Problem & Robotic Simulation
+# Traveling Ethiopia Search Problem 
 
 This project explores classic search techniques using a simplified map of Ethiopia, then brings those ideas to life through a 3D robotic simulation built with ROS 2 and Gazebo.
 
@@ -113,60 +113,6 @@ Model a competitive scenario where an agent selects the best-quality coffee whil
 **How to Run**
 
 * Execute the Jupyter Notebook cell for **Q4**.
-
----
-
-##  Question 5: ROS 2 & Gazebo Robot Simulation
-
-This final part connects search algorithms to a physical-style robot navigating a 3D environment.
-
-### 1. Package Setup (Ubuntu 24.04 / ROS 2 Jazzy)
-
-**Key Files**
-
-* `urdf/ethiopia_bot.urdf`
-  Defines a blue, three-wheeled differential-drive robot using the `gz-sim-diff-drive` plugin.
-* `worlds/ethiopia.world`
-  Gazebo world where cities are mapped to Cartesian coordinates.
-* `launch/simulation.launch.py`
-  Launch file that starts Gazebo and bridges it with ROS 2.
-* `traveling_ethiopia/navigator.py`
-  ROS 2 node implementing BFS-based path planning and a simple P-controller for motion.
-
----
-
-### 2. Running the Simulation
-
-#### Step 1: Build the Workspace
-
-```bash
-cd ~/ros2_ws
-colcon build --symlink-install
-source install/setup.bash
-```
-
-#### Step 2: Launch the Simulation
-
-This starts Gazebo and spawns the robot at Addis Ababa `(0, 0)`.
-
-```bash
-ros2 launch traveling_ethiopia simulation.launch.py
-```
-
-#### Step 3: Run the Navigator Node
-
-Open a new terminal:
-
-```bash
-source ~/ros2_ws/install/setup.bash
-ros2 run traveling_ethiopia navigator
-```
-
-The robot will:
-
-* Generate a path using BFS
-* Follow that path autonomously
-* Drive to the destination specified in the `execute_mission` function
 
 ---
 
